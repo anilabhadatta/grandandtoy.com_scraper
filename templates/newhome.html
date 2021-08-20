@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >GrandandToy Crawler</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+</head>
+
+
+<body style="background-color:rgb(233, 243, 236);">
+    <div style="margin-top: 50px;" class="ui container">
+        <h1 class="ui center aligned header" style="color: rgb(255, 1, 1);">GrandandToy Crawler</h1>
+        
+        
+
+        <form class="ui form" action="" method="POST" >
+            <div class="field">
+                <label>Enter URL</label>
+                <input type="text" name="url" placeholder="Enter Url"><br>
+            </div>
+            
+            <input class="ui blue button" type="submit" name="finderrors" value="Find Errors" />
+
+            {% if condition1 %}
+            <input class="ui blue button" type="submit" name="download_fe" value="Download Error Excel" />
+            {% endif %}
+
+            <input class="ui blue button" type="submit" name="findplp" value="Find Products" />
+
+            {% if condition2 %}
+            <input class="ui blue button" type="submit" name="download_plp" value="Download Product List Excel" />
+            {% endif %}
+        </form>
+
+        <hr>
+    </div>
+</body>
+
+</html>
